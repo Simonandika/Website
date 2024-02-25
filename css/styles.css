@@ -1,0 +1,494 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+    background-color: black; 
+    background-image:url('../assets/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+/* Awal Desain Konten Navigation-bar */
+.navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    opacity: .8;
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: all .5s ease;
+   
+
+}
+.navigation-bar.scrolling-active{
+    opacity: 1;
+}
+
+
+.navigation-bar .logo img{
+    height: 45px;
+    width: 20%;
+    margin-left: 5px;
+}
+.navigation-bar .logo a {
+    text-decoration: none;
+    align-items: center;
+    font-weight: lighter;
+    display: flex;
+}
+.navigation-bar .logo a span{
+    
+    margin-left: 5px;
+    font-size: large;
+    color: rgb(217, 164, 30);
+}
+
+#fitur{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+ 
+}
+#fitur ul li{
+    display: inline;
+    width: 100%;
+    list-style: none;
+    text-align: center;   
+}
+#fitur ul li a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight:lighter;
+}
+#fitur ul li a:hover{
+    color: rgb(241, 221, 7);
+    font-size: 14px;
+    transition: linear .3s;
+}
+#menu{
+    display: none;
+    
+}
+
+
+/* Akhir Desain Konten Navigation-bar */
+
+
+
+
+.gambar1{
+ 
+    height: 100vh;
+}
+ 
+.gambar1 div{
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+    
+.gambar1 div h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px yellow;
+}
+
+
+#gbr1{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* Awal Desain Jasa Desain Rumah */
+.tulisan1{
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: block;
+    height: 70%;
+    width: 80%;
+ 
+}
+.cards h4{
+    margin-top: 3%;
+    font-size: 20px;
+}
+.cards h2{
+    font-size: 30px;
+}
+
+/* Akhir Desan Jasa Desain Rumah */
+
+
+
+/* Awal Desain Biaya Terjangkau */
+
+
+.tulisan2{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+
+}
+.card2 h5{
+    font-size: 20px;
+    margin-left: 5px;
+    text-align: center;
+}
+/* Akhir Desain Biaya Terjangkau */
+
+
+
+/* Awal Desain Katalog */
+.katalog{
+    width: 100%;
+    padding-top: 5px;
+   
+}
+.katalog img{
+    
+    border-radius: 10px;
+    height:300px;
+    width: 32.94%;
+}
+/* Akhir Desain Katalog */
+
+
+
+/* Awal Desain Footer */
+.footer .sosmed {
+    margin-top:20px; 
+    position:absolute;
+    left: 50%;
+    margin-left: 5px;
+    transform: translate(-50%,0);
+}
+.footer .sosmed img {
+    height: 40px;
+}
+
+.footer{
+  
+    background-color:black; 
+    margin-top:5px; 
+    padding-left:8px; 
+    height:250px; 
+    text-align:center;
+
+}
+.footer h2 {
+    font-size: 40px;
+    color:rgb(255, 255, 255); 
+    padding-top: 30px; 
+}
+.footer p{
+    color: white;
+    margin-top:90px;
+}
+/* Akhir Desain Footer */
+
+
+
+/* Awal Desain Animasi Loading */
+/* #luar {
+    position:absolute;
+    width: 100%;
+    height: 400%;
+    background-color: black;
+    z-index: 999;
+}
+
+.lingkaran {
+    height: 220px;
+    width: 440px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: solid .3px white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.lingkaran:before {
+    content: '';
+    position: absolute;
+    right: -100px;
+    width: 200%;
+    height: 200px;
+    background: linear-gradient(gold, red);
+    animation: rotasi 4s linear infinite;
+
+
+}
+
+
+.lingkaran:after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    inset: 5px;
+    border-radius: 10px;
+}
+
+
+.lingkaran img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    z-index: 2;
+
+}
+
+@keyframes rotasi {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+} */
+
+
+
+/* Akhir Desain Animasi Loading */
+
+
+/* Awal Pembuatan Responsive */
+
+    
+
+@media screen and (max-width:820px ) {
+    html{
+        font-size: 80%;
+    }
+    .gambar1{
+        height: 100vh;
+    }
+    .gambar1 #gbr1{
+        height: 100vh;
+    }
+    .tulisan1{
+        height: 40%;
+    }
+    .tulisan1 .cards h4{
+        font-size: 25px;
+    }
+    .katalog img{
+        width: 100%;
+        height: 50%;
+      }
+
+}
+@media screen and (max-width:750px){
+    .navigation-bar .hidden{
+        display: none;
+       }
+    
+}
+
+@media screen and (max-width:660px ) {
+    html{
+        
+        font-size: 40%;
+
+    }
+    #menu{
+        display: inline;
+        color: white;
+        margin-right: 8px;
+        
+        
+       
+    } 
+    #fitur{ 
+        
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        top: 100%;
+        height: 40vh;
+        
+       
+    }
+
+    #fitur ul li{
+        margin-top: 15px;
+        flex-direction: column;
+        display: block;
+        text-align: start;
+        font-size: 10px;
+    }
+   .navigation-bar .hidden{
+    display: none;
+   }
+
+   .navigation-bar{
+    height: 50px;
+   }
+   .gambar1 div h1{
+    font-size: 25px;
+    letter-spacing: 2px;
+    align-items:center;
+    justify-content: center;
+    
+    
+   }
+   .gambar1 {
+
+    height: 60%;
+   }
+   .gambar1 #gbr1{
+    height: 60%;
+   }
+   .gambar1 div h1{
+    position: absolute;
+    bottom: 20%;
+   }
+   
+
+   .tulisan1{
+    height: 25%;
+   }
+   .tulisan1 .cards h2{
+    font-size: 20px;
+   }
+   .tulisan1 .cards h4{
+    font-size: 15px;
+   }
+   
+   .tulisan2 .card2 h5{
+    font-size: 12px;
+   }
+
+  .katalog img{
+    width: 100%;
+    height: 50%;
+  }
+  .footer{
+    height: 200px;
+  }
+  .footer h2{
+    font-size: 30px;
+  }
+  
+  .tulisan2{
+    height: 10%;
+  }
+    
+    
+    
+}
+
+@media screen and (max-width:470px ) {
+    html{
+        font-size: 20%;
+    }
+    #fitur{
+        height: 23vh;
+    }
+    .gambar1{
+        height: 40vh;
+    }
+    .gambar1 #gbr1{
+        height: 40vh;
+    }
+    .gambar1 div h1{
+        position: absolute;
+        bottom: 28%;
+    }
+    .tulisan1 {
+        height: 18%;
+    }
+    .tulisan1 .cards h2{
+        font-size: 18px;
+    }
+    .tulisan1 .cards h4{
+        font-size: 12px;
+    }
+    .tulisan2{
+        height: 5%;
+    }
+    .tulisan2 .card2 h5{
+        font-size: 10px;
+    }
+    
+}
+
+
+/* Bagian Portofolio */
+
+.desain, .desainkedua{
+    padding-top: 10%;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-between;
+    
+}
+
+.desain .desain1, .desain2, .desain3{
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    display: block;
+    width: 50%;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+.desain .desain1 img, .desain .desain2 img, .desain .desain3 img{   
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+   
+}
+.desain h3{
+    position:absolute; 
+    color:rgb(0, 0, 0);
+    margin-left: 10px;
+ 
+    
+}
